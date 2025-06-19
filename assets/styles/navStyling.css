@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 100%;
+    height:40px;
+    padding: 13px 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(-140deg,var(--primaryColor),var(--textColor2));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10000;
+    box-shadow: 1px 1px 10px 0px gold;
+    /* border-bottom:1px solid gold;    */
+}
+.logoDiv{
+    width: auto;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--textColor);
+    cursor: pointer;
+    transition: 0.1s all ease;
+}
+.logoDiv:hover{
+    scale: 1.02;
+
+}
+#logo{
+    width: 45px;
+    height: 45px;
+}
+#menu{
+    /* position: absolute; */
+    color: white;
+    display: none;
+}
+.navLinks{
+    font-size: 600;
+}
+.navBar{
+    width: auto;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-right: 100px;
+}
+.navLinks{
+    text-decoration:none;
+    letter-spacing: 1px;
+    color: var(--textColor);
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.navBar a:hover{
+    scale: 1.1;
+    color:color-mix(in srgb, var(--primaryColor) 70%, var(--textColor) 30%);
+    transition: 0.3s all ease;
+}
+.cartMenu_div{
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+@media (max-width:768px) {
+    .header{
+        /* border-bottom: 1px solid yellow; */
+        justify-content: space-between;
+        
+    }
+    .logoDiv{
+        margin-left: 20px;
+    }
+    .navBar{
+        position: absolute;
+        top: 66px;
+        right: -50px;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+        height: max-content;
+        padding: 5px 10px;
+    }
+    #menu{
+        display: block;
+        font-size: 19px;
+    }
+    .navBar.close{
+        display: none; 
+        background-color: red;
+    }
+    .cartMenu_div{
+        margin-right: 40px;
+        gap: 20px;
+    }
+}

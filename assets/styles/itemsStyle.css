@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --textColor:white;
+    --primaryColor:red;
+    --textColor2:black;
+    --buttonColor:#FFD700;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, #242323, rgb(231, 23, 23));
+
+
+}
+.mainContainer{
+    display: grid;
+    grid-template-columns:  250px 250px 250px 250px ;
+    margin-top: 100px;
+    grid-gap: 1px;
+}   
+.mainContainer .itemsDiv{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    padding: 3px 10px;
+    color: white;
+    border: 0.01px solid grey;
+}
+.itemsDiv:hover{
+    scale: 1.01;
+    cursor: pointer;
+    /* border: 0px; */
+}
+.productImg{
+    width: 100%;
+    height: 200px;
+}
+.productDescription{
+    font-size: 17px;
+    font-weight:500 ;
+}
+.categories{
+    font:large;
+    font-weight: 548;
+}
+.price{
+    color: orange;
+}
+
+@media (max-width:1024px) {
+    .mainContainer{
+        grid-template-columns: 300px 300px 300px;        
+    }
+}
+@media (max-width:916px) {
+    .mainContainer{
+        grid-template-columns: 270px 250px 270px;        
+    }
+}
+@media (max-width:810px) {
+    .mainContainer{
+        grid-template-columns: 250px 250px 250px;        
+    }
+}
+@media (max-width:768px) {
+    .mainContainer{
+        grid-template-columns: 310px 310px;        
+    }
+}
+@media (max-width:640px) {
+    .mainContainer{
+        grid-template-columns: 270px 270px;        
+    }
+}
+@media (max-width:560px) {
+    .mainContainer{
+        grid-template-columns: 250px 250px;        
+    }
+}
+@media (max-width:520px) {
+    .mainContainer{
+        grid-template-columns: 220px 210px;        
+    }
+}
+@media (max-width:460px) {
+    .mainContainer{
+        grid-template-columns: 330px;
+        grid-gap:1px;        
+    }
+}
+@media (max-width:360px) {
+    .mainContainer{
+        grid-template-columns: 300px;
+        grid-gap:1px;        
+    }
+}
