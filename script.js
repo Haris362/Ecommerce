@@ -141,7 +141,7 @@ for (let i=0; i<items.length; i++){
     itemsDiv.appendChild(productDescription)
     //Slicing the line
     const productText = current.description.length>30 
-    ? current.description.slice(0,70) + "...": console.log("hello");
+    ? current.description.slice(0,40) + "...": console.log("hello");
     
     productDescription.textContent = productText;
     
