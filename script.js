@@ -110,9 +110,9 @@ const items = [
     {id:"3",img:"./assets/images/shirt3.png",productName:"Shirt",description:"Black color plane T shirt for 17+ people with excellent quality..",categories:"17+ Age",rating:"3.5/5",price:"$3.89"},
     {id:"4",img:"./assets/images/shirt4.png",productName:"Shirt",description:"Multi color T shirt for Kids with best quality print.",categories:"Kids",rating:"4.5/5",price:"$10.99"},
     // Pants
-    {id:"5",img:"./assets/images/pant1.jpeg",productName:"Trouser",description:"Trouser for boys with 4to5 pockets with high quality.",categories:"Male",rating:"3.3/5",price:"$4.69"},
+    {id:"5",img:"./assets/images/pant1.png",productName:"Trouser",description:"Trouser for boys with 4to5 pockets with high quality.",categories:"Male",rating:"3.3/5",price:"$4.69"},
     {id:"6",img:"./assets/images/pant2.png",productName:"Pant",description:"Jeans pants for mens with 4 pockets having blue color.",categories:"Male & Female",rating:"4.3/5",price:"$8.99"},
-    {id:"7",img:"./assets/images/pant3.jpeg",productName:"Trouser",description:"Stylish black colour for boys with 2 pockets.",categories:"Males",rating:"4/5",price:"$2.00"},
+    {id:"7",img:"./assets/images/pant3.png",productName:"Trouser",description:"Stylish black colour for boys with 2 pockets.",categories:"Males",rating:"4/5",price:"$2.00"},
     {id:"8",img:"./assets/images/pant4.png",productName:"Pant",description:"Sky blue color dress pant for mens.With stylish beats.",categories:"Females",rating:"2.34/5",price:"$1.59"},
     // Shoes
     {id:"9",img:"./assets/images/shoes1.png",productName:"Shoes",description:"Nike shoes with black and red colour contrast.Best quality shoes for boys",categories:"Males",rating:"3.7/5",price:"$18.99"},

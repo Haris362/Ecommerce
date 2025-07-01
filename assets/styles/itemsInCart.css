@@ -31,14 +31,7 @@
     border: 0.5px solid var(--textColor2);
     display: none;
 }
-.cart_Button{
-    background-color: var(--buttonColor);
-    color: var(--textColor);
-    height: 30px;
-    border: 1px solid var(--textColor2);
-    cursor: pointer;
-    
-}
+
 .items_Cart{
     width: 300px;
     height: 400px;
