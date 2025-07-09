@@ -32,24 +32,24 @@ cartMenu_Div.appendChild(menu)
 menu.id = "menu";
 menu.className = "fa-solid fa-bars";
 
-menu.addEventListener("click",function(){
+menu.addEventListener("click", function () {
     console.log("menu clicked");
-    
+
     navBar.classList.toggle("close")
 })
 // Nav items
-const navItems =  [
-    {navLink:"Home",href:"#home"},
-    {navLink:"About",href:"#about"},
-    {navLink:"Services",href:"#services"},
-    {navLink:"Settings",href:"#settings"}
+const navItems = [
+    { navLink: "Home", href: "#home" },
+    { navLink: "About", href: "#about" },
+    { navLink: "Services", href: "#services" },
+    { navLink: "Settings", href: "#settings" }
 ]
 
-for (let i=0; i<navItems.length; i++){
+for (let i = 0; i < navItems.length; i++) {
     const navLink = document.createElement("a");
     navBar.appendChild(navLink)
     navLink.classList.add("navLinks")
-    navLink.href =  navItems[i].href;
+    navLink.href = navItems[i].href;
 
     const navElementstext = document.createElement("span");
     navLink.appendChild(navElementstext)
@@ -67,7 +67,7 @@ cartDiv.classList.add("cartDiv")
 //Cart Icon
 const cartIcon = document.createElement("i");
 cartDiv.appendChild(cartIcon)
-cartIcon.className  = 'fa-solid fa-cart-shopping'
+cartIcon.className = 'fa-solid fa-cart-shopping'
 // Cart notification
 let cartNotification = document.createElement("span");
 cartDiv.appendChild(cartNotification)
@@ -85,16 +85,16 @@ items_Cart.appendChild(itemsEmpty_Message);
 itemsEmpty_Message.textContent = "No items found"
 itemsEmpty_Message.classList.add("itemsEmpty_Message")
 
-if (itemsIncart_array.length == 0){
+if (itemsIncart_array.length == 0) {
     itemsEmpty_Message.style.display = `none`
-    
+
 }
-else{
+else {
     itemsEmpty_Message.style.display = `inline`
-    
+
 }
 
-const itemsInCart_toogle = ()=>{
+const itemsInCart_toogle = () => {
     items_Cart.classList.toggle("items_toogle")
 }
 cartIcon.onclick = itemsInCart_toogle;
@@ -105,123 +105,136 @@ document.body.appendChild(container)
 
 const items = [
     // Shirts
-    {id:"1",img:"./assets/images/shirt1.png",productName:"Shirt",description:"Pack of 3 T shirt of Multi-colors for Summer.",categories:"20+ Age",rating:"5/5",price:"$5.5"},
-    {id:"2",img:"./assets/images/shirt2.png",productName:"Shirt",description:"Blue stylish plane T shirt for adults people.",categories:"Adults",rating:"2/5",price:"$6.99"},
-    {id:"3",img:"./assets/images/shirt3.png",productName:"Shirt",description:"Black color plane T shirt for 17+ people with excellent quality..",categories:"17+ Age",rating:"3.5/5",price:"$3.89"},
-    {id:"4",img:"./assets/images/shirt4.png",productName:"Shirt",description:"Multi color T shirt for Kids with best quality print.",categories:"Kids",rating:"4.5/5",price:"$10.99"},
+    { id: "1", img: "./assets/images/shirt1.png", productName: "Shirt", description: "Pack of 3 T shirt of Multi-colors for Summer.", categories: "20+ Age", rating: "5/5", price: "$5.5" },
+    { id: "2", img: "./assets/images/shirt2.png", productName: "Shirt", description: "Blue stylish plane T shirt for adults people.", categories: "Adults", rating: "2/5", price: "$6.99" },
+    { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black color plane T shirt for 17+ people with excellent quality..", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
+    { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Multi color T shirt for Kids with best quality print.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
     // Pants
-    {id:"5",img:"./assets/images/pant1.jpeg",productName:"Trouser",description:"Trouser for boys with 4to5 pockets with high quality.",categories:"Male",rating:"3.3/5",price:"$4.69"},
-    {id:"6",img:"./assets/images/pant2.png",productName:"Pant",description:"Jeans pants for mens with 4 pockets having blue color.",categories:"Male & Female",rating:"4.3/5",price:"$8.99"},
-    {id:"7",img:"./assets/images/pant3.jpeg",productName:"Trouser",description:"Stylish black colour for boys with 2 pockets.",categories:"Males",rating:"4/5",price:"$2.00"},
-    {id:"8",img:"./assets/images/pant4.png",productName:"Pant",description:"Sky blue color dress pant for mens.",categories:"Females",rating:"2.34/5",price:"$1.59"},
+    { id: "5", img: "./assets/images/pant1.jpeg", productName: "Trouser", description: "Trouser for boys with 4to5 pockets with high quality.", categories: "Male", rating: "3.3/5", price: "$4.69" },
+    { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Jeans pants for mens with 4 pockets having blue color.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
+    { id: "7", img: "./assets/images/pant3.jpeg", productName: "Trouser", description: "Stylish black colour for boys with 2 pockets.", categories: "Males", rating: "4/5", price: "$2.00" },
+    { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue color dress pant for mens.", categories: "Females", rating: "2.34/5", price: "$1.59" },
     // Shoes
-    {id:"9",img:"./assets/images/shoes1.png",productName:"Shoes",description:"Nike shoes with black and red colour contrast.Best quality shoes for boys",categories:"Males",rating:"3.7/5",price:"$18.99"},
-    {id:"10",img:"./assets/images/shoes2.png",productName:"Sneakers",description:"Comfortable and soft sneakers for male and female.",categories:"Males & Females",rating:"4.7/5",price:"$9.19"},
-    {id:"11",img:"./assets/images/shoes3.png",productName:"Joggers",description:"Joggers with best quality better for hiking and for walk.",categories:"Males",rating:"5/5",price:"$4.99"},
-    {id:"12",img:"./assets/images/shoes4.png",productName:"Joggers",description:"Best quality shoes for adults for picnic,hiking,walk for normal use.",categories:"Adults",rating:"1.7/5",price:"$7.69"},
+    { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes with black and red colour contrast.Best quality shoes for boys", categories: "Males", rating: "3.7/5", price: "$18.99" },
+    { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable and soft sneakers for male and female.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
+    { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "Joggers with best quality better for hiking and for walk.", categories: "Males", rating: "5/5", price: "$4.99" },
+    { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Best quality shoes for adults for picnic,hiking,walk for normal use.", categories: "Adults", rating: "1.7/5", price: "$7.69" },
+    { id: "1", img: "./assets/images/shirt1.png", productName: "Shirt", description: "Pack of 3 T shirt of Multi-colors for Summer.", categories: "20+ Age", rating: "5/5", price: "$5.5" },
+    { id: "2", img: "./assets/images/shirt2.png", productName: "Shirt", description: "Blue stylish plane T shirt for adults people.", categories: "Adults", rating: "2/5", price: "$6.99" },
+    { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black color plane T shirt for 17+ people with excellent quality..", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
+    { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Multi color T shirt for Kids with best quality print.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
+    // Pants
+    { id: "5", img: "./assets/images/pant1.jpeg", productName: "Trouser", description: "Trouser for boys with 4to5 pockets with high quality.", categories: "Male", rating: "3.3/5", price: "$4.69" },
+    { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Jeans pants for mens with 4 pockets having blue color.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
+    { id: "7", img: "./assets/images/pant3.jpeg", productName: "Trouser", description: "Stylish black colour for boys with 2 pockets.", categories: "Males", rating: "4/5", price: "$2.00" },
+    { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue color dress pant for mens.", categories: "Females", rating: "2.34/5", price: "$1.59" },
+    // Shoes
+    { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes with black and red colour contrast.Best quality shoes for boys", categories: "Males", rating: "3.7/5", price: "$18.99" },
+    { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable and soft sneakers for male and female.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
+    { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "Joggers with best quality better for hiking and for walk.", categories: "Males", rating: "5/5", price: "$4.99" },
+    { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Best quality shoes for adults for picnic,hiking,walk for normal use.", categories: "Adults", rating: "1.7/5", price: "$7.69" },
 ]
 const maxDesc = 60;
-for (let i=0; i<items.length; i++){
-    
+for (let i = 0; i < items.length; i++) {
+
     const current = items[i];
     // Items div
     const itemsDiv = document.createElement("div");
     itemsDiv.classList.add("itemsDiv")
     container.appendChild(itemsDiv)
-    
+
     // Products Img
     const productImg = document.createElement("img");
     productImg.classList.add("productImg")
     itemsDiv.appendChild(productImg)
     productImg.src = current.img;
-    
+
     // Items Description
-    const  productDescription = document.createElement("span");
+    const productDescription = document.createElement("span");
     productDescription.classList.add("productDescription")
     itemsDiv.appendChild(productDescription)
     productDescription.textContent = current.description;
-    
+
     // ItemName
     const ItemName = document.createElement("h4");
     ItemName.classList.add("itemName")
     itemsDiv.appendChild(ItemName)
     ItemName.textContent = "Product name:" + current.productName;
-    
+
     //Categories
     const categories = document.createElement("span");
     categories.classList.add("categories")
     itemsDiv.appendChild(categories)
     categories.textContent = "For:" + current.categories
-    
+
     // Price
     const price = document.createElement("strong");
     price.classList.add("price")
     itemsDiv.appendChild(price)
     price.textContent = "Price:" + current.price;
-    
+
     // rating
     const rating = document.createElement("small");
     rating.classList.add("rating")
     itemsDiv.appendChild(rating)
     rating.textContent = "Rating:" + current.rating
-    
+
     //Add to cart button
     const cart_Button = document.createElement("button");
     itemsDiv.appendChild(cart_Button)
     cart_Button.classList.add("cart_Button")
-    cart_Button.textContent  = "Add to cart"
-    cart_Button.setAttribute("data-id",items[i]["id"])
-    
-}
-const existingItem = (itemsId) => items.find(x=>x.id == itemsId)
+    cart_Button.textContent = "Add to cart"
+    cart_Button.setAttribute("data-id", items[i]["id"])
 
-document.querySelectorAll(".cart_Button").forEach(buttons=>{
-        buttons.addEventListener("click",function(){
+}
+const itemsDiv = document.querySelector(".itemsDiv")
+const existingItem = (itemsId) => items.find(x => x.id == itemsId)
+
+document.querySelectorAll(".cart_Button").forEach(buttons => {
+    buttons.addEventListener("click", function () {
         const productId = this.dataset.id;
         console.log(productId);
-        
-        
+
+
         itemsIncart_array.push(existingItem(productId))
         console.log(itemsIncart_array);
-        
-        
+
+        buttons.textContent = "Remove from cart"
+        buttons.style.backgroundColor = "red"
+        // Items
         const itemsInCart = document.createElement("div");
         itemsInCart.classList.add("itemsInCart")
         items_Cart.appendChild(itemsInCart);
-        
+        // Product Img div
         const productImageDiv = document.createElement("div");
         itemsInCart.appendChild(productImageDiv)
         productImageDiv.classList.add("productImageDiv")
-        
+        // Product Img 
         const productImage = document.createElement("img");
-        productImage.src = existingItem(productId).img    
+        productImage.src = existingItem(productId).img
         productImageDiv.appendChild(productImage)
         productImage.classList.add("productImg_Cart")
-        
-        if (itemsIncart_array.length >0){
+        // Product Description        
+        const productDescription = document.createElement("span");
+        productDescription.textContent = existingItem(productId).description
+        itemsInCart.appendChild(productDescription)
+        productDescription.classList.add("itemsInCart_Description")
+
+        if (itemsIncart_array.length > 9) {
+            cartNotification.textContent = `9+`;
+        } else if (itemsIncart_array.length > 0) {
             cartNotification.style.display = `flex`
-            cartNotification.textContent = itemsIncart_array.length
+            cartNotification.textContent = itemsIncart_array.length;
         }
-        else if(itemsIncart_array.length > 9){
-            cartNotification.style.display = `flex`
-            cartNotification.textContent = "9+"
-            
-        }
+        const deleteIcon = document.createElement("i");
+        itemsInCart.appendChild(deleteIcon);
+        deleteIcon.className = "fa-solid fa-trash"
+        deleteIcon.id = "deleteIcon"
+
     })
 })
 
-// const allButtons = document.querySelectorAll(".cart_Button")
-// document.querySelectorAll(".cart_Button").forEach(x=>{
-//         x.addEventListener("click",function(){
-//             const id = this.dataset.id;
-//             console.log(id);
-            
-//             itemsIncart_array.forEach(current=>{
-//                 if (current.id == id){
-//                     allButtons.current.style.display = `none`
-                    
-//                 }
-//             })
-//         })
-        
-//     })
+    const params = URLSearchParams(items);
+    const querry = params.toString();
+    console.log(params);
+    

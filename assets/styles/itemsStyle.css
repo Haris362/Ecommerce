@@ -14,7 +14,7 @@ body{
     flex-direction: column;
     align-items: center;
     scroll-behavior: smooth;
-    background: linear-gradient(to right, #242323, rgb(231, 23, 23));
+    background: linear-gradient(90deg, #111010, rgb(231, 23, 23));
 
 
 }
@@ -30,13 +30,13 @@ body{
     flex-direction: column;
     gap:8px;
     padding: 3px 10px;
-    color: white;
+    color: var(--textColor);
     border: 0.01px solid grey;
 }
 .itemsDiv:hover{
     scale: 1.01;
     cursor: pointer;
-    /* border: 0px; */
+    border-color: var(--buttonColor);
 }
 .productImg{
     width: 100%;

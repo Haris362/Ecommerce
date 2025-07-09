@@ -8,14 +8,12 @@
     padding: 13px 0px;
     padding-left: 30px;
     padding-right: 30px;
-    background-image: linear-gradient(-140deg,var(--primaryColor),var(--textColor2));
+    background-image: linear-gradient(-90deg,var(--primaryColor),var(--textColor2));
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 10000;
-    box-shadow: 1px 1px 10px 0px gold;
-    /* border-bottom:1px solid gold;    */
 }
 .logoDiv{
     width: auto;
