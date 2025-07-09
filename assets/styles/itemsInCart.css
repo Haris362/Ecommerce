@@ -33,6 +33,7 @@
     display: none;
 }
 
+<<<<<<< HEAD
 .cart_Button {
     background-color: var(--buttonColor);
     color: var(--textColor);
@@ -43,6 +44,9 @@
 }
 
 .items_Cart {
+=======
+.items_Cart{
+>>>>>>> 31d33ffb66f3b8187fe15dde8f3a400f0b5c7e75
     width: 300px;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.05);
