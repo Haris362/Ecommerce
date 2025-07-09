@@ -110,17 +110,10 @@ const items = [
     { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black color plane T shirt for 17+ people with excellent quality..", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
     { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Multi color T shirt for Kids with best quality print.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
     // Pants
-<<<<<<< HEAD
     { id: "5", img: "./assets/images/pant1.jpeg", productName: "Trouser", description: "Trouser for boys with 4to5 pockets with high quality.", categories: "Male", rating: "3.3/5", price: "$4.69" },
     { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Jeans pants for mens with 4 pockets having blue color.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
     { id: "7", img: "./assets/images/pant3.jpeg", productName: "Trouser", description: "Stylish black colour for boys with 2 pockets.", categories: "Males", rating: "4/5", price: "$2.00" },
     { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue color dress pant for mens.", categories: "Females", rating: "2.34/5", price: "$1.59" },
-=======
-    {id:"5",img:"./assets/images/pant1.png",productName:"Trouser",description:"Trouser for boys with 4to5 pockets with high quality.",categories:"Male",rating:"3.3/5",price:"$4.69"},
-    {id:"6",img:"./assets/images/pant2.png",productName:"Pant",description:"Jeans pants for mens with 4 pockets having blue color.",categories:"Male & Female",rating:"4.3/5",price:"$8.99"},
-    {id:"7",img:"./assets/images/pant3.png",productName:"Trouser",description:"Stylish black colour for boys with 2 pockets.",categories:"Males",rating:"4/5",price:"$2.00"},
-    {id:"8",img:"./assets/images/pant4.png",productName:"Pant",description:"Sky blue color dress pant for mens.With stylish beats.",categories:"Females",rating:"2.34/5",price:"$1.59"},
->>>>>>> 31d33ffb66f3b8187fe15dde8f3a400f0b5c7e75
     // Shoes
     { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes with black and red colour contrast.Best quality shoes for boys", categories: "Males", rating: "3.7/5", price: "$18.99" },
     { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable and soft sneakers for male and female.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
@@ -141,15 +134,9 @@ const items = [
     { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "Joggers with best quality better for hiking and for walk.", categories: "Males", rating: "5/5", price: "$4.99" },
     { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Best quality shoes for adults for picnic,hiking,walk for normal use.", categories: "Adults", rating: "1.7/5", price: "$7.69" },
 ]
-<<<<<<< HEAD
 const maxDesc = 60;
 for (let i = 0; i < items.length; i++) {
 
-=======
-
-for (let i=0; i<items.length; i++){
-    
->>>>>>> 31d33ffb66f3b8187fe15dde8f3a400f0b5c7e75
     const current = items[i];
     // Items div
     const itemsDiv = document.createElement("div");
@@ -166,18 +153,8 @@ for (let i=0; i<items.length; i++){
     const productDescription = document.createElement("span");
     productDescription.classList.add("productDescription")
     itemsDiv.appendChild(productDescription)
-<<<<<<< HEAD
     productDescription.textContent = current.description;
 
-=======
-    //Slicing the line
-    const productText = current.description.length>30 
-    ? current.description.slice(0,40) + "...": console.log("hello");
-    
-    productDescription.textContent = productText;
-    
-    
->>>>>>> 31d33ffb66f3b8187fe15dde8f3a400f0b5c7e75
     // ItemName
     const ItemName = document.createElement("h4");
     ItemName.classList.add("itemName")
@@ -257,10 +234,7 @@ document.querySelectorAll(".cart_Button").forEach(buttons => {
     })
 })
 
-<<<<<<< HEAD
     const params = URLSearchParams(items);
     const querry = params.toString();
     console.log(params);
     
-=======
->>>>>>> 31d33ffb66f3b8187fe15dde8f3a400f0b5c7e75
