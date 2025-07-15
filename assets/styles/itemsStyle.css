@@ -31,7 +31,7 @@ body{
     display: flex;
     flex-direction: column;
     gap:8px;
-    padding: 3px 10px;
+    padding: 8px 10px;
     color: var(--textColor);
     border: 0.01px solid grey;
 }
@@ -41,12 +41,9 @@ body{
     border-color: var(--buttonColor);
     padding: 5px 10px;
     color: white;
-    /* border: 0.001px solid rgb(255, 157, 52);*/
     border: 1px solid rgba(255, 255, 255, 0.357);
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 10px;
-
-
 }
 .itemsDiv:hover{
     transform: scale(1.02);
@@ -78,7 +75,7 @@ body{
     border-radius: 8px;
 }
 .cart_Button:hover{
-    box-shadow: 0px 0px 15px 3px green;
+    box-shadow: 0px 0px 10px 1px orange;
 }
 
 @media (max-width:952px) {

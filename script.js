@@ -150,10 +150,11 @@ for (let i = 0; i < items.length; i++) {
             description:current.description,
             id:current.id,
             price:current.price,
+            rating:current.rating
         }
         const params = new URLSearchParams(products).toString();
         console.log(params);
-        const url = `productsDetail?${params}`
+        const url = `productsDetail.html?${params}`
         console.log(url);
         window.location.href = url;
     })
@@ -168,8 +169,10 @@ for (let i = 0; i < items.length; i++) {
     const productDescription = document.createElement("span");
     productDescription.classList.add("productDescription")
     itemsDiv.appendChild(productDescription)
-    productDescription.textContent = current.description;
-
+    if (current.description.length > 30) {
+        let shortDescription = current.description.slice(0,50) + `...`
+        productDescription.textContent = shortDescription
+    }
     // ItemName
     const ItemName = document.createElement("h4");
     ItemName.classList.add("itemName")
