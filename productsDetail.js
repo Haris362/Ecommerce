@@ -49,7 +49,7 @@ console.log(window.location);
   const productRating = document.createElement("p");
   productRating.textContent = `Rating: ${rating}`;
   container.appendChild(productRating);
-    },1000)
+    },500)
 }catch(error){
     console.log("Please check the network connection");
     
