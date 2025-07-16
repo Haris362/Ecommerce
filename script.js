@@ -104,36 +104,25 @@ container.classList.add("mainContainer")
 document.body.appendChild(container)
 
 const items = [
-    // Shirts
-    { id: "1", img: "./assets/images/shirt1.png", productName: "Shirt", description: "Pack of 3 T shirt of Multi-colors for Summer.", categories: "20+ Age", rating: "5/5", price: "$5.5" },
-    { id: "2", img: "./assets/images/shirt2.png", productName: "Shirt", description: "Blue stylish plane T shirt for adults people.", categories: "Adults", rating: "2/5", price: "$6.99" },
-    { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black color plane T shirt for 17+ people with excellent quality..", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
-    { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Multi color T shirt for Kids with best quality print.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
-    // Pants
-    { id: "5", img: "./assets/images/pant1.png", productName: "Trouser", description: "Trouser for boys with 4to5 pockets with high quality.", categories: "Male", rating: "3.3/5", price: "$4.69" },
-    { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Jeans pants for mens with 4 pockets having blue color.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
-    { id: "7", img: "./assets/images/pant3.png", productName: "Trouser", description: "Stylish black colour for boys with 2 pockets.", categories: "Males", rating: "4/5", price: "$2.00" },
-    { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue color dress pant for mens.", categories: "Females", rating: "2.34/5", price: "$1.59" },
-    // Shoes
-    { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes with black and red colour contrast.Best quality shoes for boys", categories: "Males", rating: "3.7/5", price: "$18.99" },
-    { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable and soft sneakers for male and female.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
-    { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "Joggers with best quality better for hiking and for walk.", categories: "Males", rating: "5/5", price: "$4.99" },
-    { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Best quality shoes for adults for picnic,hiking,walk for normal use.", categories: "Adults", rating: "1.7/5", price: "$7.69" },
-    { id: "1", img: "./assets/images/shirt1.png", productName: "Shirt", description: "Pack of 3 T shirt of Multi-colors for Summer.", categories: "20+ Age", rating: "5/5", price: "$5.5" },
-    { id: "2", img: "./assets/images/shirt2.png", productName: "Shirt", description: "Blue stylish plane T shirt for adults people.", categories: "Adults", rating: "2/5", price: "$6.99" },
-    { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black color plane T shirt for 17+ people with excellent quality..", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
-    { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Multi color T shirt for Kids with best quality print.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
-    // Pants
-    { id: "5", img: "./assets/images/pant1.png", productName: "Trouser", description: "Trouser for boys with 4to5 pockets with high quality.", categories: "Male", rating: "3.3/5", price: "$4.69" },
-    { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Jeans pants for mens with 4 pockets having blue color.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
-    { id: "7", img: "./assets/images/pant3.png", productName: "Trouser", description: "Stylish black colour for boys with 2 pockets.", categories: "Males", rating: "4/5", price: "$2.00" },
-    { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue color dress pant for mens.", categories: "Females", rating: "2.34/5", price: "$1.59" },
-    // Shoes
-    { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes with black and red colour contrast.Best quality shoes for boys", categories: "Males", rating: "3.7/5", price: "$18.99" },
-    { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable and soft sneakers for male and female.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
-    { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "Joggers with best quality better for hiking and for walk.", categories: "Males", rating: "5/5", price: "$4.99" },
-    { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Best quality shoes for adults for picnic,hiking,walk for normal use.", categories: "Adults", rating: "1.7/5", price: "$7.69" },
-]
+  // Shirts
+  { id: "1", img: "./assets/images/shirt1.png", productName: "Shirt", description: "Pack of 3 multicolor T-shirts. Ideal for summer wear. Soft, breathable fabric. Best for 20+ age group. Great value combo pack.", categories: "20+ Age", rating: "5/5", price: "$5.5" },
+  { id: "2", img: "./assets/images/shirt2.png", productName: "Shirt", description: "Plain blue adult T-shirt. Minimalist and trendy look. Comfortable all-day wear. Good for casual outings. Made with durable material.", categories: "Adults", rating: "2/5", price: "$6.99" },
+  { id: "3", img: "./assets/images/shirt3.png", productName: "Shirt", description: "Black T-shirt for 17+ age group. High-quality soft cotton. Plain design, easy to match. Ideal for casual and gym use. Lightweight and comfortable.", categories: "17+ Age", rating: "3.5/5", price: "$3.89" },
+  { id: "4", img: "./assets/images/shirt4.png", productName: "Shirt", description: "Colorful printed shirt for kids. Premium print and stitching. Soft and stretchable fabric. Comfortable for daily use. Loved by active kids.", categories: "Kids", rating: "4.5/5", price: "$10.99" },
+
+  // Pants
+  { id: "5", img: "./assets/images/pant1.png", productName: "Trouser", description: "Stylish trouser for boys. Multiple spacious pockets. Durable and modern look. Perfect for casual wear. Easy to move and flexible.", categories: "Male", rating: "3.3/5", price: "$4.69" },
+  { id: "6", img: "./assets/images/pant2.png", productName: "Pant", description: "Classic blue jeans pants. Comfortable for all genders. 4-pocket design, straight fit. Stretchable and stylish. Ideal for daily wear.", categories: "Male & Female", rating: "4.3/5", price: "$8.99" },
+  { id: "7", img: "./assets/images/pant3.png", productName: "Trouser", description: "Slim-fit black trouser for boys. Smooth fabric with soft lining. 2 pockets for essentials. Suitable for outings and home. Breathable and modern fit.", categories: "Males", rating: "4/5", price: "$2.00" },
+  { id: "8", img: "./assets/images/pant4.png", productName: "Pant", description: "Sky blue dress pant for men. Made with premium quality. Soft texture and elegant look. Ideal for formal wear. Comfortable for long hours.", categories: "Females", rating: "2.34/5", price: "$1.59" },
+
+  // Shoes
+  { id: "9", img: "./assets/images/shoes1.png", productName: "Shoes", description: "Nike shoes in black-red color. Durable rubber sole. Breathable material for comfort. Great for sports and walking. Stylish for casual use.", categories: "Males", rating: "3.7/5", price: "$18.99" },
+  { id: "10", img: "./assets/images/shoes2.png", productName: "Sneakers", description: "Comfortable sneakers for all. Soft padding inside. Trendy design with grip sole. Unisex everyday shoes. Lightweight and modern.", categories: "Males & Females", rating: "4.7/5", price: "$9.19" },
+  { id: "11", img: "./assets/images/shoes3.png", productName: "Joggers", description: "High-performance joggers. Perfect for running and hiking. Supportive ankle design. Strong grip with soft cushioning. Ideal for active use.", categories: "Males", rating: "5/5", price: "$4.99" },
+  { id: "12", img: "./assets/images/shoes4.png", productName: "Joggers", description: "Multi-use joggers for adults. Great for hiking and daily walks. Cushioned sole with breathable fabric. Lightweight and durable. Good for all seasons.", categories: "Adults", rating: "1.7/5", price: "$7.69" }
+];
+
 const maxDesc = 60;
 for (let i = 0; i < items.length; i++) {
 
